@@ -1,0 +1,78 @@
+.hero__section {
+    background-color: var(--hero-bg);
+}
+
+.hero__content h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.hero__content p {
+    color: var(--primary-color);
+    line-height: 28px;
+}
+
+.hero__content p:nth-child(1) {
+    font-weight: 500;
+}
+
+.buy__btn {
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.buy__btn:hover a {
+    color: #b76262;
+}
+
+.hero__div img {
+    width: 70%;
+    height: 50%;
+}
+
+.timer__count {
+    background-color: var(--primary-color);
+    height: 300px;
+}
+
+.timer__count img {
+    height: 70% !important;
+    width: 70% !important;
+    object-fit: contain;
+}
+
+.store__btn {
+    background-color: #fff;
+    color: var(--primary-color);
+    font-weight: 500;
+    padding: 8px;
+    margin-top: 12px;
+    border-radius: 8px;
+}
+
+.store__btn a:hover{
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width:768){
+    .hero__content h2{
+        font-size: 1.6rem;
+    }
+    .hero__content p{
+        font-size: 0.9rem;
+    }
+
+    .buy__btn{
+        font-size: 0.9rem;
+    }
+}

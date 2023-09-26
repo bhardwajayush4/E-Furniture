@@ -1,0 +1,108 @@
+.product__detail {
+    margin-top: 70px;
+}
+
+.product__detail h2 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: rgba(0, 0, 0, 0.708);
+}
+
+img{
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+    /* margin-top: 0; */
+}
+
+.product__rating span i{
+    color: coral;
+}
+
+.product__rating p span{
+    color: coral;
+    font-weight: 500;   
+}
+
+.product__price{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.buy__btn{
+    padding: 5px;
+    font-size: 0.9rem;
+    border-radius: 7px;
+    font-weight: 500;    
+}
+
+.tab__wrapper h6{
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tab__content p{
+    /* margin-top: 10px; */
+}
+
+.active__tab{
+    font-weight: 600;
+}
+
+.wrapper__review ul li span{
+font-size: 1rem;
+font-weight: 500;
+color: coral;
+}
+
+.wrapper__review ul li p{
+    margin-top: 10px;
+}
+
+.review__forum{
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.review__forum h4{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+}
+
+.form__group{
+    margin-bottom: 1.5rem;
+}
+
+.form__group input, textarea{
+    width: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 8px 20px;
+}
+
+.form__group input, textarea:focus{
+    outline: none;
+}
+
+.form__group span{
+   margin-right: 1rem;
+   color: coral;
+   cursor: pointer;
+   font-weight: 500;
+}
+
+.related__title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width:768px) {
+    .product__detail h2{
+        font-size: 1.2rem;
+    }
+}
