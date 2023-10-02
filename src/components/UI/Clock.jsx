@@ -11,12 +11,12 @@ const Clock = () => {
   let interval;
   const countDown = () => {
 
-    const destination = new Date('Aug 12, 2023').getTime()
+    const destination = new Date('Sep 12, 2023').getTime()
 
     interval = setInterval(() => {
       const now = new Date().getTime()
 
-      const different = now - destination
+      const different = destination - now  
 
       const days = Math.floor((different) / (1000 * 60 * 60 * 24)) 
 
@@ -26,7 +26,7 @@ const Clock = () => {
 
       const seconds = Math.floor((different % (1000 * 60)) / (1000))
 
-      if (different < 0) 
+      if (destination < 0) 
         clearInterval(interval.current)
       
       else {

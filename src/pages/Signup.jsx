@@ -35,7 +35,7 @@ const Signup = () => {
           toast.error(error.message)
         },
         () => {
-          getDownloadURL(uploadTask.snapshot.ref).then(async (downloadUrl) => {
+          getDownloadURL(uploadTask.snapshot.ref).then(async downloadUrl => {
             // update user profile
             await updateProfile(user, {
               displayName: username,
@@ -81,7 +81,7 @@ const Signup = () => {
                     <input className='text-center' type="password" placeholder='Enter your Password' value={password} onChange={(e) => setPassword(e.target.value)} />
                   </FormGroup>
                   <FormGroup className='group__form'>
-                    <input className='text-center' type="file" placeholder='Choose File' value={file} onClick={(e) => setFile(e.target.files[0])} />
+                    <input className='text-center' type="file" placeholder='Choose File' onChange={(e) => setFile(e.target.files[0])} />
                   </FormGroup>
                   <button type='submit' className=" auth__btn mt-3">Create an account</button>
                   <p>Already have an account?{' '}<Link to='/login'>Login</Link></p>

@@ -31,7 +31,7 @@ const Header = () => {
   const headref = useRef(null)
   const menuref = useRef(null)
   const profileUserRef = useRef(null)
-  const { currentUser } = useAuth()
+  const { currentUser } = useAuth() 
 
   const scrollHandlerFunc = () => {
     window.addEventListener('scroll', () => {
@@ -110,6 +110,7 @@ const Header = () => {
                     <div className='d-flex align-items-center justify-content-center flex-column'>
                       <Link to='/signup'>Signup</Link>
                       <Link to='/login'>Login</Link>
+                      <Link to='/dashboard'>Dashboard</Link>
                     </div>
                   )}
               </div>
